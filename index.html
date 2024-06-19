@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <form id="formulario-de-tarefas">
+            <label for="campo-de-tarefa">Adicionar Tarefa:</label>
+            <input type="text" id="campo-de-tarefa" placeholder="Adicionar nova tarefa" required>
+            <label for="data-de-inicio">Data de Início:</label>
+            <input type="date" id="data-de-inicio" required>
+            <label for="data-de-termino">Data de Fim:</label>
+            <input type="date" id="data-de-termino" required>
+            <label for="detalhes-da-tarefa">Detalhes:</label>
+            <textarea id="detalhes-da-tarefa" placeholder="Detalhes da tarefa (opcional)" rows="2"></textarea>
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+        <div id="contador-de-tarefas">Você tem <b>0</b> tarefas.</div>
+        <div id="lista-de-tarefas">
+            <ul>
+                <!-- as tarefas serão adicionadas aqui -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.3/dist/sweetalert2.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

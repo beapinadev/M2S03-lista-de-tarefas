@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-color:#ECB390;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.container {
+    width: 500px;
+    background-color: #DF7861;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #FCF8E8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+form label {
+    margin-bottom: 5px;
+    color: #FCF8E8;
+    font-size: 20px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #ECB390;
+    color: #FCF8E8;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px rgba(90, 43, 33, 0.7);
+}
+
+#contador-de-tarefas {
+    text-align: center;
+    margin: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: #f8f9fa;
+}
+
+ul li.concluida {
+    text-decoration: line-through;
+    color: rgba(90, 43, 33, 0.7);
+}
